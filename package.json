@@ -1,0 +1,21 @@
+{
+  "name": "policy-creation-guard",
+  "version": "0.1.0",
+  "description": "Failproof pack: require user approval before agents create, publish, install, or deploy policies",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "author": "sank8-2",
+  "scripts": {
+    "test": "node --test",
+    "postinstall": "node scripts/patch-failproofai-package.mjs"
+  },
+  "keywords": [
+    "failproofai",
+    "agent-reliability",
+    "policy-governance"
+  ],
+  "dependencies": {
+    "failproofai": "^1.0.12"
+  }
+}
